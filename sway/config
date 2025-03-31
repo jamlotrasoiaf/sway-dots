@@ -43,6 +43,13 @@ set $right l
 set $term alacritty
 set $menu fuzzel
 set $screenshot grim -g "$(slurp)" - | swappy -f -
+set $lock swaylock -i ~/.config/lockscreen.jpg
+exec swayidle -w \
+    timeout 600 $lock \
+    timeout 300 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep $lock
+
 # common bindings
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
@@ -56,6 +63,7 @@ bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 bindsym XF86AudioMicMute exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 bindsym Print exec $screenshot
 bindsym $mod+Shift+x exec cliphist list | fuzzel --dmenu | cliphist decode | wl-copy
+
 # more bindings
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
