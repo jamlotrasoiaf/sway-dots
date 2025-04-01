@@ -3,7 +3,7 @@ font pango:hack nerd font regular 12
 output * bg ~/.config/wallpaper.jpg fill
 
 exec mako
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/libexec/polkit-mate-authentication-agent-1
 exec wl-paste --watch cliphist store
 
 gaps inner 4

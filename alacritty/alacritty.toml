@@ -30,7 +30,7 @@ family = "Hack Nerd Font"
 style = "Medium"
 
 [terminal.shell]
-program = "/bin/zsh"
+program = "/bin/bash"
 
 [window]
 opacity = 1.000000
