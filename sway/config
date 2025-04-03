@@ -1,9 +1,9 @@
 font pango:hack nerd font regular 12
 
-output * bg ~/.config/wallpaper.jpg fill
+output * bg ~/.config/wallpaper.png fill
 
 exec mako
-exec /usr/libexec/polkit-mate-authentication-agent-1
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec wl-paste --watch cliphist store
 
 gaps inner 4
@@ -43,7 +43,7 @@ set $right l
 set $term alacritty
 set $menu fuzzel
 set $screenshot grim -g "$(slurp)" - | swappy -f -
-set $lock swaylock -i ~/.config/lockscreen.jpg
+set $lock swaylock -i ~/.config/lockscreen.png
 exec swayidle -w \
     timeout 600 $lock \
     timeout 300 'swaymsg "output * dpms off"' \
