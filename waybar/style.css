@@ -40,7 +40,7 @@ tooltip {
     min-width: 0;
     box-shadow: inset 0 -3px transparent;
     padding: 2px 4px;
-    color: #414b50;
+    color: #4f5b58;
 }
 
 #workspaces button.focused {
@@ -59,12 +59,12 @@ tooltip {
 
 #tray {
     background-color: #d3c6aa;
-    border: 2px solid #414b50;
+    border: 2px solid #4f5b58;
 }
 
 #battery {
     background-color: #a7c080;
-    border: 2px solid #414b50;
+    border: 2px solid #4f5b58;
     color: #1e2326;
 }
 
@@ -73,14 +73,14 @@ tooltip {
 #network,
 #wireplumber {
     background-color: #d3c6aa;
-    border: 2px solid #414b50;
+    border: 2px solid #4f5b58;
     color: #1e2326;
 }
 
 #cpu.critical,
 #memory.critical {
     background-color: #d3c6aa;
-    border: 2px solid #414b50;
+    border: 2px solid #4f5b58;
     color: #e67e80;
 }
 
@@ -88,6 +88,6 @@ tooltip {
 #battery.critical,
 #battery.urgent {
     background-color: #d3c6aa;
-    border: 2px solid #414b50;
+    border: 2px solid #4f5b58;
     color: #e67e80;
 }
