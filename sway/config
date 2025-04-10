@@ -6,6 +6,21 @@ exec mako
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec wl-paste --watch cliphist store
 
+# waybar
+layer_effects "waybar" blur disable; shadows enable; corner_radius 0
+
+smart_corner_radius enable
+corner_radius 0
+shadows enable
+shadows_on_csd enable
+shadow_blur_radius 20
+
+## blur
+blur enable
+blur_xray disable
+blur_passes 4
+blur_radius 4
+
 gaps inner 4
 gaps outer 4
 
