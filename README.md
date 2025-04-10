@@ -6,6 +6,8 @@ noto-fonts-emoji wl-clipboard cliphist
 ```
 install a browser of choice, and a discord client like `vesktop-bin`
 
+for display manager: `ly`
+
 for reader, i recommend `foliate`
 
 spotify flags: `--enable-features=UseOzonePlatform --ozone-platform=wayland`
